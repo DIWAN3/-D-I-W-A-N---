@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تسجيل الدخول إلى ديوان.">
+  <title>تسجيل الدخول | DIWAN</title>
+  <link rel="icon" href="diwan-favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="diwan-favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site-shell">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="DIWAN"><span class="brand-mark"><img src="diwan-favicon.png" alt="DIWAN"></span><span>DIWAN</span></a>
+    <div class="header-actions">
+      <button class="icon-button" id="theme-toggle" aria-label="تبديل الوضع">☾</button>
+      <button class="language-button" id="language-toggle" aria-label="تغيير اللغة">EN</button>
+      <a class="text-link" href="index.html" data-ar="العودة للرئيسية" data-en="Back home">العودة للرئيسية</a>
+    </div>
+  </header>
+
+  <main class="auth-wrap">
+    <section class="auth-single reveal">
+      <div class="auth-card">
+        <div class="auth-top">
+          <span class="auth-kicker">DIWAN / ACCOUNT</span>
+          <span class="auth-dot" aria-hidden="true"></span>
+        </div>
+
+        <div class="auth-idea auth-purpose">
+          <div class="auth-idea-mark"><img src="diwan-favicon.png" alt="DIWAN"></div>
+          <div>
+            <p class="eyebrow" data-ar="داخل ديوان" data-en="Inside DIWAN">داخل ديوان</p>
+            <h1 data-ar-html="مكان واحد،<br><em>لهدف واضح.</em>" data-en-html="One place,<br><em>with a clear purpose.</em>">مكان واحد،<br><em>لهدف واضح.</em></h1>
+            <p data-ar="حسابك يوصلك إلى الأفكار والتواصل ومجتمع ديوان بدون خطوات زائدة." data-en="Your account gives you a simple way to share ideas, connect, and access the DIWAN community.">حسابك يوصلك إلى الأفكار والتواصل ومجتمع ديوان بدون خطوات زائدة.</p>
+          </div>
+        </div>
+        <div class="auth-value-grid">
+          <div><span>01</span><b data-ar="شارك فكرتك" data-en="Share your idea">شارك فكرتك</b></div>
+          <div><span>02</span><b data-ar="تواصل بسهولة" data-en="Connect easily">تواصل بسهولة</b></div>
+          <div><span>03</span><b data-ar="تابع حسابك" data-en="Manage your account">تابع حسابك</b></div>
+        </div>
+
+        <div class="auth-form-head">
+          <h2 data-ar="مرحبًا بك في ديوان" data-en="Welcome to DIWAN">مرحبًا بك في ديوان</h2>
+          <p class="auth-subtitle" data-ar="سجّل الدخول للمتابعة إلى مساحتك." data-en="Sign in to continue to your space.">سجّل الدخول للمتابعة إلى مساحتك.</p>
+        </div>
+
+        <form class="auth-form" id="login-form" data-local-auth="login">
+          <div class="field"><label for="login-identity" data-ar="البريد أو اسم المستخدم" data-en="Email or username">البريد أو اسم المستخدم</label><div class="input-wrap"><input id="login-identity" name="identity" required autocomplete="username" placeholder="name@example.com"></div></div>
+          <div class="field"><label for="login-password" data-ar="كلمة المرور" data-en="Password">كلمة المرور</label><div class="input-wrap"><input id="login-password" name="password" type="password" required autocomplete="current-password" placeholder="••••••••"><button class="toggle-pass" type="button" data-target="login-password" aria-label="إظهار كلمة المرور"><img src="diwan-favicon.png" alt=""></button></div></div>
+          <div class="form-row"><label class="check"><input type="checkbox" name="remember"><span data-ar="تذكرني" data-en="Remember me">تذكرني</span></label><button class="forgot" id="forgot-password" type="button" data-ar="نسيت كلمة المرور؟" data-en="Forgot password?">نسيت كلمة المرور؟</button></div>
+          <p class="auth-message" aria-live="polite"></p>
+          <button class="button button-primary auth-submit" type="submit" data-ar="دخول إلى ديوان ↗" data-en="Enter DIWAN →">دخول إلى ديوان ↗</button>
+        </form>
+
+        <form class="auth-form" id="register-form" data-local-auth="register" hidden>
+          <div class="field"><label for="register-username" data-ar="اسم المستخدم" data-en="Username">اسم المستخدم</label><div class="input-wrap"><input id="register-username" name="username" required minlength="2" maxlength="32" autocomplete="username" placeholder="Mutazz"></div></div>
+          <div class="field"><label for="register-email" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label><div class="input-wrap"><input id="register-email" name="email" type="email" required autocomplete="email" placeholder="name@example.com"></div></div>
+          <div class="field"><label for="register-password" data-ar="كلمة المرور" data-en="Password">كلمة المرور</label><div class="input-wrap"><input id="register-password" name="password" type="password" required minlength="8" maxlength="72" autocomplete="new-password" placeholder="8 أحرف على الأقل"><button class="toggle-pass" type="button" data-target="register-password" aria-label="إظهار كلمة المرور"><img src="diwan-favicon.png" alt=""></button></div></div>
+          <div class="password-meter" id="password-meter" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="password-hint" data-ar="استخدم أحرفًا وأرقامًا ورمزًا واحدًا على الأقل لكلمة مرور أقوى." data-en="Use letters, numbers, and at least one symbol for a stronger password.">استخدم أحرفًا وأرقامًا ورمزًا واحدًا على الأقل لكلمة مرور أقوى.</div>
+          <label class="check"><input type="checkbox" name="remember"><span data-ar="إبقاء الحساب مسجلًا" data-en="Keep me signed in">إبقاء الحساب مسجلًا</span></label>
+          <p class="auth-message" aria-live="polite"></p>
+          <button class="button button-primary auth-submit" type="submit" data-ar="إنشاء الحساب ↗" data-en="Create account →">إنشاء الحساب ↗</button>
+        </form>
+
+        <div class="auth-bottom">
+          <span class="auth-bottom-copy" id="auth-bottom-copy" data-ar="ليس لديك حساب؟" data-en="Don't have an account?">ليس لديك حساب؟</span>
+          <button type="button" class="auth-switch" id="auth-switch" data-mode="register" data-ar="إنشاء حساب" data-en="Create account">إنشاء حساب</button>
+        </div>
+
+        <div class="auth-divider"><span data-ar="تجربة ديوان" data-en="The DIWAN experience">تجربة ديوان</span></div>
+        <div class="auth-trust" data-ar="واجهة واضحة • تفاعل خفيف • تجربة مرتبة" data-en="Clear interface • subtle interaction • organized experience">واجهة واضحة • تفاعل خفيف • تجربة مرتبة</div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="modal" id="forgot-modal"><div class="modal-card"><h3 data-ar="استعادة كلمة المرور" data-en="Password recovery">استعادة كلمة المرور</h3><p data-ar="استعادة كلمة المرور عبر البريد تحتاج ربط خدمة بريد خارجية. استخدم صفحة التواصل إلى أن يتم إعداد الخدمة." data-en="Password recovery by email needs an external email service. Use the contact page until the service is configured.">استعادة كلمة المرور عبر البريد تحتاج ربط خدمة بريد خارجية. استخدم صفحة التواصل إلى أن يتم إعداد الخدمة.</p><div class="modal-actions"><button class="button button-secondary" type="button" data-close-modal data-ar="إغلاق" data-en="Close">إغلاق</button><a class="button button-primary" href="contact.html" data-ar="تواصل مع الفريق" data-en="Contact the team">تواصل مع الفريق</a></div></div></div>
+<script src="config.js"></script><script src="app.js" defer></script>
+</body>
+</html>

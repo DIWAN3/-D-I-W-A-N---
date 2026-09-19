@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تواصل مع فريق ديوان عبر الطلبات والشكاوى والاقتراحات والمراسلات.">
+  <title>تواصل | DIWAN</title>
+  <link rel="icon" href="diwan-favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="diwan-favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site-shell">
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark"><img src="diwan-favicon.png" alt="DIWAN"></span><span>DIWAN</span></a>
+    <nav class="nav-links" id="site-nav" aria-label="التنقل">
+      <a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+      <a href="about.html" data-ar="عن ديوان" data-en="About">عن ديوان</a>
+      <a class="active" href="contact.html" data-ar="تواصل" data-en="Contact">تواصل</a>
+      <a href="ideas.html" data-ar="الأفكار" data-en="Ideas">الأفكار</a>
+    </nav>
+    <div class="header-actions">
+      <button class="nav-toggle" id="nav-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <button class="icon-button" id="theme-toggle" aria-label="تبديل الوضع">☾</button>
+      <button class="language-button" id="language-toggle" aria-label="تغيير اللغة">EN</button>
+      <a class="button button-small button-primary" href="login.html" data-ar="تسجيل الدخول" data-en="Sign in">تسجيل الدخول</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-heading reveal">
+      <p class="eyebrow">02 / CONTACT</p>
+      <h1 data-ar-html="تحدث معنا،<br><em>والباقي علينا.</em>" data-en-html="Talk to us,<br><em>we'll take it from there.</em>">تحدث معنا،<br><em>والباقي علينا.</em></h1>
+      <p class="lead" data-ar="اختر نوع الرسالة، اكتب التفاصيل، وأرسلها مباشرة من الموقع. طلبات الموقع مخصصة للتواصل مع فريق ديوان، بينما يبقى Discord مكان المجتمع والمحادثات اليومية." data-en="Choose the message type, add the details, and submit it from the site. Website submissions are for the DIWAN team, while Discord remains the community space.">اختر نوع الرسالة، اكتب التفاصيل، وأرسلها مباشرة من الموقع. طلبات الموقع مخصصة للتواصل مع فريق ديوان، بينما يبقى Discord مكان المجتمع والمحادثات اليومية.</p>
+    </section>
+
+    <section class="contact-hero-grid">
+      <div class="contact-action-panel reveal">
+        <div class="contact-action-icon"><img src="diwan-favicon.png" alt=""></div>
+        <span class="eyebrow">DIWAN / DIRECT</span>
+        <h2 data-ar="عندك موضوع يحتاج الفريق؟" data-en="Need the team?"></h2>
+        <p data-ar="استخدم النموذج لإرسال شكوى أو طلب أو اقتراح أو مراسلة. بعد الإرسال يتم توجيه الطلب تلقائيًا إلى قناة ديوان المخصصة على Discord." data-en="Use the form for a complaint, request, suggestion, or message. Submissions are forwarded automatically to DIWAN's dedicated Discord channel.">استخدم النموذج لإرسال شكوى أو طلب أو اقتراح أو مراسلة. بعد الإرسال يتم توجيه الطلب تلقائيًا إلى قناة ديوان المخصصة على Discord.</p>
+        <div class="contact-action-buttons">
+          <a class="button button-primary" data-discord-link href="https://discord.gg/FcSqsCtBJ" target="_blank" rel="noreferrer" data-ar="دخول سيرفر ديوان ↗" data-en="Join DIWAN ↗">دخول سيرفر ديوان ↗</a>
+          <a class="button button-secondary" data-complaints-link href="https://discord.gg/gEukfd7v5" target="_blank" rel="noreferrer" data-ar="فتح الشكاوى والطلبات ↗" data-en="Open requests & complaints ↗">فتح الشكاوى والطلبات ↗</a>
+        </div>
+      </div>
+
+      <form class="form-card reveal" data-local-form="contact">
+        <div class="form-card-head">
+          <div>
+            <span class="eyebrow">03 / SEND</span>
+            <h2 data-ar="أرسل رسالتك" data-en="Send your message">أرسل رسالتك</h2>
+          </div>
+          <span class="form-live-dot"><i></i><span data-ar="جاهز" data-en="Ready">جاهز</span></span>
+        </div>
+        <p data-ar="جميع الحقول الأساسية مطلوبة حتى تصل رسالتك بشكل واضح." data-en="Required fields help your message arrive with the right context.">جميع الحقول الأساسية مطلوبة حتى تصل رسالتك بشكل واضح.</p>
+
+        <div class="form-grid contact-form-grid">
+          <div class="field">
+            <label for="name" data-ar="الاسم" data-en="Name">الاسم</label>
+            <input id="name" name="name" required maxlength="80" autocomplete="name" placeholder="مثال: معتز">
+          </div>
+          <div class="field">
+            <label for="email" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+            <input id="email" name="email" type="email" required maxlength="160" autocomplete="email" placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="type" data-ar="نوع الرسالة" data-en="Message type">نوع الرسالة</label>
+            <select id="type" name="type" required>
+              <option value="complaint" data-ar="شكوى" data-en="Complaint">شكوى</option>
+              <option value="request" data-ar="طلب" data-en="Request">طلب</option>
+              <option value="suggestion" data-ar="اقتراح" data-en="Suggestion">اقتراح</option>
+              <option value="message" data-ar="مراسلة" data-en="Message">مراسلة</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="discord" data-ar="اسمك في Discord" data-en="Discord username">اسمك في Discord</label>
+            <input id="discord" name="discord" maxlength="120" autocomplete="off" placeholder="username">
+          </div>
+          <div class="field full">
+            <label for="subject" data-ar="عنوان مختصر" data-en="Short subject">عنوان مختصر</label>
+            <input id="subject" name="subject" required maxlength="140" placeholder="مثال: اقتراح لتطوير الموقع">
+          </div>
+          <div class="field full">
+            <label for="message" data-ar="التفاصيل" data-en="Details">التفاصيل</label>
+            <textarea id="message" name="message" required minlength="10" maxlength="3000" placeholder="اكتب التفاصيل هنا..."></textarea>
+            <div class="textarea-meta"><span data-ar="كلما كانت التفاصيل أوضح، كان الرد أسهل." data-en="Clearer details make follow-up easier.">كلما كانت التفاصيل أوضح، كان الرد أسهل.</span><span id="message-count">0 / 3000</span></div>
+          </div>
+          <div class="field full">
+            <button class="button button-primary contact-submit" type="submit" data-ar="إرسال إلى ديوان ↗" data-en="Send to DIWAN →">إرسال إلى ديوان ↗</button>
+            <p class="form-status full-width" aria-live="polite"></p>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="section contact-bottom-section">
+      <div class="section-head reveal">
+        <div><p class="eyebrow">04 / WHERE TO GO</p><h2 data-ar-html="كل طريق،<br><em>له مكانه.</em>" data-en-html="Every path,<br><em>has its place.</em>">كل طريق،<br><em>له مكانه.</em></h2></div>
+        <p data-ar="الموقع مخصص للرسائل الرسمية والتفاصيل. Discord مخصص للمجتمع والتواصل السريع، ويمكنك الوصول إلى قسم الشكاوى والطلبات من الزر المخصص." data-en="The website handles formal submissions and details. Discord is for the community and quick conversation, with a dedicated requests and complaints entry point.">الموقع مخصص للرسائل الرسمية والتفاصيل. Discord مخصص للمجتمع والتواصل السريع، ويمكنك الوصول إلى قسم الشكاوى والطلبات من الزر المخصص.</p>
+      </div>
+      <div class="contact-route-grid">
+        <a class="contact-route reveal" data-complaints-link href="https://discord.gg/gEukfd7v5" target="_blank" rel="noreferrer">
+          <span>01</span><strong data-ar="الشكاوى والطلبات" data-en="Requests & complaints">الشكاوى والطلبات</strong><small data-ar="بوابة Discord المخصصة" data-en="Dedicated Discord entry">بوابة Discord المخصصة</small><b>↗</b>
+        </a>
+        <a class="contact-route reveal" data-discord-link href="https://discord.gg/FcSqsCtBJ" target="_blank" rel="noreferrer">
+          <span>02</span><strong data-ar="مجتمع ديوان" data-en="DIWAN community">مجتمع ديوان</strong><small data-ar="ادخل إلى السيرفر" data-en="Enter the server">ادخل إلى السيرفر</small><b>↗</b>
+        </a>
+        <a class="contact-route reveal" href="ideas.html">
+          <span>03</span><strong data-ar="أفكار وتطوير" data-en="Ideas & improvements">أفكار وتطوير</strong><small data-ar="شارك اقتراحك من الموقع" data-en="Share your idea on the site">شارك اقتراحك من الموقع</small><b>↗</b>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand"><span class="brand-mark"><img src="diwan-favicon.png" alt="DIWAN"></span><div><strong>DIWAN</strong><small data-ar="مجتمعك، بطريقتك." data-en="Your community, your way.">مجتمعك، بطريقتك.</small></div></div>
+    <a class="button button-primary" data-discord-link href="https://discord.gg/FcSqsCtBJ" target="_blank" rel="noreferrer" data-ar="انضم إلى Discord ↗" data-en="Join Discord ↗">انضم إلى Discord ↗</a>
+    <p>© 2026 DIWAN</p>
+  </footer>
+</div>
+<script src="config.js"></script>
+<script src="app.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const box = document.getElementById('message');
+    const count = document.getElementById('message-count');
+    if (box && count) {
+      const update = () => { count.textContent = `${box.value.length} / 3000`; };
+      box.addEventListener('input', update); update();
+    }
+  });
+</script>
+</body>
+</html>
